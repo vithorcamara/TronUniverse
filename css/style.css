@@ -1,0 +1,151 @@
+@import url(./navbar.css);
+
+:root {
+  --azul-escuro: #125E8A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+main {
+  margin: auto; 
+  background-color: #c0c0c0;
+}
+
+main > h1, main > h2 {
+  display: none;
+}
+
+div.cont{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: auto;
+  align-self: center;
+}
+
+.cont{
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  padding: 1vh;
+}
+
+#reverse{
+  flex-direction: row-reverse;
+}
+
+#div_opt{
+  background-color: #a4a9ad;
+}
+
+ul.opt{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  align-self: center;
+}
+
+li.opt{
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  padding: 20px 0px;
+}
+
+button.opt{
+  font-family: 'Poppins';
+  color: white;
+  text-align: center;
+  width: auto;
+  padding: 5px 14px;
+  text-decoration: none;
+  background-color: #125E8A;
+  border: none;
+  border-radius: 0.5vw;
+}
+
+button.opt:hover{
+  background-color: #e8d1cb;
+  color: #125E8A;
+}
+
+.text {
+  padding: 0 20px;
+}
+
+h1, h2{
+  font-family: 'Berkshire Swash', cursive;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: -0.045em;  
+  color: #02111B;
+
+}
+
+h3{
+  color: #02111B;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+p {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: -0.045em;
+  color: #333333;
+}
+
+#terceira{
+  color: #02111B;
+}
+
+body{
+  overflow-x: hidden;
+  color: white;
+  background-color: #c0c0c0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 80%;
+}
+
+footer{
+  height: 5vh;
+  background-color: #000000;
+}
+
+@media (max-width: 906px){
+  .nav-menu{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50vw;
+    height: 90vh;
+    background-color: #e2ecee;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  #resp-nav-menu{
+    display: block;
+    margin: auto;
+  }
+  .nav-menu.active{
+    transform: translateX(0);
+  }
+  div.cont, .cont, #reverse{
+    flex-direction: column;
+  }
+  img{
+    align-self: center;
+  }
+}
+
+.cont img {
+  height: 40vh;
+}

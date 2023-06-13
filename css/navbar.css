@@ -1,0 +1,95 @@
+nav{
+    position: sticky;
+    top: 0;
+    margin: auto;
+    background-color:#333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    height: 10vh;
+  }
+  
+  #resp-nav-menu{
+    cursor: pointer;
+    display: none;
+  }
+  
+  #TRON-LOGO{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: white;
+    margin: auto;
+  }
+  #TRON-LOGO:hover{
+    color: #00ffff;
+  }
+  
+  .nav-menu {
+    display: flex;
+    font-size: 15px;
+    list-style-type: none;
+    margin: auto;
+    overflow: hidden;
+    justify-content: space-around;
+    align-self: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin: 5px 3px 5px 3px;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-size: 1vw;
+  }
+  #donate {
+    color: white;
+    background-color: #000033;
+    border-radius: 0.5vw;
+    padding: 7px 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1vw;
+    letter-spacing: 0.29em;
+    text-indent: 0.29em;  
+  }
+  #donate:hover{
+      color: #333333;
+      background-color: #00ffff;
+  }
+  
+  li a:hover{
+    color: #00ffff;
+  }
+   
+  .dropdown {
+    display: inline-block;
+    position: relative;
+    align-content: center;
+  }
+  
+  .dropdown:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00ffff;
+    transform-origin: bottom;
+    transition: transform 0.1s ease-out;
+  }
+  
+  .dropdown:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+  }
+  

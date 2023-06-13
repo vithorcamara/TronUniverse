@@ -1,4 +1,5 @@
 @import url(./navbar.css);
+@import url(./home.css);
 
 :root {
   --azul-escuro: #125E8A;
@@ -13,10 +14,6 @@
 main {
   margin: auto; 
   background-color: #c0c0c0;
-}
-
-main > h1, main > h2 {
-  display: none;
 }
 
 div.cont{

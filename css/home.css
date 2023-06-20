@@ -1,14 +1,38 @@
 #home #introducao{
     height: 90vh;
     background-color: azure;
+    background-image: url(https://wallpapers.com/images/hd/tron-wallpaper-8-s1h0d35as9p0a4al.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
 }
 
 #home #sinopse{
     height: 90vh;
     background-color:beige;
+    background-image: url(https://rare-gallery.com/uploads/posts/582825-tron-legacy.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
 }
 
 #home #personagens-principais{
-    height: 90vh;
+    height: 85vh;
     background-color: azure;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/789/241/184/tv-show-tron-uprising-wallpaper-preview.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
 }

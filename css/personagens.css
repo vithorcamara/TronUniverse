@@ -1,0 +1,68 @@
+#personagens #introducao{
+    width: 100vw;
+    height: 90vh;
+    background-color: azure;
+    background-image: url(https://free4kwallpapers.com/uploads/originals/2015/12/18/tron-legacy-characters-wallpaper.jpg);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;    
+}
+#personagens #galeria{
+    width: 100vw;
+    height: 85vh;
+    background-color: azure;
+    background-image: url(https://free4kwallpapers.com/uploads/originals/2015/12/18/tron-legacy-characters-wallpaper.jpg);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;    
+}
+.carrossel{
+    width: 90vw;
+    height: 70vh;
+    overflow: hidden;
+    position:absolute;
+}
+.navigation{
+    position: absolute;
+    bottom: -75vh;
+    display: flex;
+}
+.bar{
+    width: 5vw;
+    height: 2.5vh;
+    border: 0.2rem solid #c0c0c0;
+    margin: 0 0.5vw;
+    cursor: pointer;
+    transition: .5s;
+}
+.bar:hover{background-color: #00ffff;}
+.slides input{display: none;}
+.slides{
+    display: flex;
+    width: 450vw;
+    height: 70vh;
+}
+.slide{
+    width: 90vw;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+}
+.slide h2{transform: translate(0,5%);}
+.slide h2 span{background-color: rgb(0, 0, 0, 0.8);}
+.s4{background-position: 0;}
+#slider1:checked ~ .s1{margin-left: 0;}
+#slider2:checked ~ .s1{margin-left: -20%;}
+#slider3:checked ~ .s1{margin-left: -40%;}
+#slider4:checked ~ .s1{margin-left: -60%;}
+#slider5:checked ~ .s1{margin-left: -80%;}

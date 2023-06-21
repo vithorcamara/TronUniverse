@@ -38,10 +38,11 @@
 .bar{
     width: 5vw;
     height: 2.5vh;
-    border: 0.2rem solid #c0c0c0;
+    border: 0.2rem solid #000000;
+    background-color: #c0c0c0;
     margin: 0 0.5vw;
     cursor: pointer;
-    transition: .5s;
+    transition: 1s;
 }
 .bar:hover{background-color: #00ffff;}
 .slides input{display: none;}

@@ -14,17 +14,109 @@
       <li class="dropdown"><a href="./personagens.html" class="dropbtn">Personagens</a></li>
       <li class="dropdown"><a href="./arquitetura.html" class="dropbtn">Cidade e Arquitetura</a></li>
       <li class="dropdown"><a href="./tecnologias.html" class="dropbtn">Tecnologias</a></li>
-      <li class="dropdown"><a href="./historia.html" class="dropbtn">História</a></li>
-      <li class="dropdown"><a href="./jogos.html" class="dropbtn">Jogos de Batalha</a></li>
       <li><a href="./junte-se.html" id="donate">Seja um Usuário!</a></li>
     </ul>
   </nav>
-  <main id="home">
-    
+  <main id="junte-se">
+    <section id="formulario-usuario">
+      <div class="img"><h1><span>Junte-se a nós nessa jornada.<br>Seja um usuário!</span></h1></div>
+      <form id="form-usuario" onsubmit="return processarFormulario()" method="POST">
+        <label for="usuario">Dados do usuário:</label>
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome-form" name="nome" required>
+        </div>
+      
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email-form" name="email" required>
+        </div>
+      
+        <div>
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha-form" name="senha" required>
+        </div>
+      
+        <label for="interesses">Interesses relacionados a Tron:</label>
+
+        <div>
+          <label for="jogos">Jogos de Batalha:</label>
+          <select id="jogos-form" name="jogos">
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="corrida">Corrida de Motos de Luz</option>
+            <option value="combate">Combate de Discos de Luz</option>
+            <option value="competicoes">Combpetições da Arena</option>
+            <option value="desafios">Desafios de Programação</option>
+            <option value="outros">Outros jogos de batalha</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="personagem">Personagem favorito:</label>
+          <select id="personagem-form" name="personagem">
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="sam">Sam</option>
+            <option value="quorra">Quorra</option>
+            <option value="flynn">Flynn</option>
+            <option value="clu">Clu</option>
+            <option value="tron">Rinzler(Tron)</option>
+            <option value="outros">Outros</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="lado">Lado preferido:</label>
+          <select id="lado-form" name="lado">
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="usuario">Usuários</option>
+            <option value="programa">Programas</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="arquitetura">Arquitetura e Design do Grid:</label>
+          <select id="arquitetura-form" name="arquitetura">
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Futurista">Futurista</option>
+            <option value="Minimalista">Minimalista</option>
+            <option value="Cyberpunk">Cyberpunk</option>
+            <option value="Steampunk">Steampunk</option>
+            <option value="Biomimética">Biomimética</option>
+            <option value="High-Tech">High-Tech</option>
+            <option value="Industrial">Industrial</option>
+            <option value="Organic">Orgânico</option>
+            <option value="Retrofuturista">Retrofuturista</option>
+            <option value="Neo-modernista">Neo-modernista</option>
+            <option value="Fantástico">Fantástico</option>
+            <option value="Experimental">Experimental</option>
+          </select>
+        </div>
+
+        <div>
+          <input class="button" id="submit-button" type="submit" value="Enviar">
+          <input class="button" id="reset-button" type="reset" value="Limpar">
+        </div>
+      </form>      
+    </section>
   </main>
   <footer>
     
   </footer>
-<script type="text/javascript" src="./js/navbar.js"></script>
+  <script>
+    function processarFormulario() {
+      // Aqui você pode adicionar o código para processar o formulário
+      // Por exemplo, você pode acessar os valores dos campos do formulário usando o DOM
+      var nome = document.getElementById('nome-form').value;
+      var email = document.getElementById('email-form').value;
+      var senha = document.getElementById('senha-form').value;
+      // Em seguida, você pode fazer o que for necessário com os valores do formulário, como enviar uma requisição AJAX
+      // Após o processamento, você pode exibir uma mensagem de sucesso
+      alert('Formulário enviado com sucesso!');
+      // E, se desejar, limpar o formulário
+      document.getElementById('form-usuario').reset();
+      // Lembre-se de retornar false para evitar que o formulário seja enviado através do método tradicional
+      return false;
+    }
+  </script>
 </body>
 </html>

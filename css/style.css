@@ -2,56 +2,61 @@
 @import url(./home.css);
 @import url(./personagens.css);
 @import url(./arquitetura.css);
+@import url(./tecnologias.css);
+@import url(./junte-se.css);
+
 :root {
   --azul-escuro: #125E8A;
-  --gradiente1: rgb(0, 0, 0, 0.25);
-  --gradiente2: rgb(0,0,0,0);
 }
+
 * {
   margin: 0;
   padding: 0;
 }
-main {
-  margin: 0; 
-  background-color: #c0c0c0;
+
+body{
+  overflow-x: hidden;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.1rem;
 }
-#reverse{flex-direction: row-reverse;}
+
+footer{
+  height: 5vh;
+  background-color: #000000;
+}
+
 .cont{
   display: flex;
   justify-content: space-around;
   align-self: center;
   align-items: center;
-  background-image: linear-gradient(--gradiente1,--gradiente2);
   background-color: rgb(0, 0, 0, 0.9);
   width: 95vw;
   height: 60vh;
   padding: 0 20px;
 }
+
+#reverse{flex-direction: row-reverse;}
+
 h1{font-size: 40px; color: #00ffff;}
+
 h2{font-size: 25px; color: #00ffff;}
+
 h3{color: #00ffff;}
+
 p {
   font-weight: 400;
   font-size: small;
   line-height: 32px;
   color: #c0c0c0;
 }
-body{
-  overflow-x: hidden;
-  font-family: 'Orbitron', sans-serif;
-  letter-spacing: 0.1rem;
-}
-footer{
-  height: 5vh;
-  background-color: #000000;
-}
+
+span{background-color: rgb(0, 0, 0, 0.5);}
+
+::-webkit-scrollbar {width: 0px;}
+
 @media (max-width: 906px) {
   div.cont, .cont, #reverse{flex-direction: column;}
+
   img{align-self: center;}
 }
-.cont img {height: 40vh;}
-/* Largura da barra de rolagem */
-::-webkit-scrollbar {
-  width: 0px;
-}
-span{background-color: rgb(0, 0, 0, 0.5);}

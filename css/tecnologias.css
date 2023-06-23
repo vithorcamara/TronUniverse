@@ -1,0 +1,37 @@
+#tecnologias #introducao{
+    width: 100vw;
+    height: 90vh;
+    background-color: azure;
+    background-image: url(https://static.wikia.nocookie.net/tron/images/1/16/Streets_of_Tron_City.png);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;    
+}
+
+#tecnologias #jogos{
+    height: 170vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+}
+
+#tecnologias #gadgets{
+    height: 400vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+}
+
+#tecnologias #jogos .cont{height: 35vh;}
+
+#tecnologias #gadgets .cont{height: auto;}
+
+#tecnologias .titulo-p{color: #00ffff;}

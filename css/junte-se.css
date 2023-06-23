@@ -1,0 +1,47 @@
+#junte-se #formulario-usuario{
+    width: 100vw;
+    height: 85vh;
+    background-color: azure;
+    background-image: url(https://static.wikia.nocookie.net/tron/images/1/16/Streets_of_Tron_City.png);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    align-self: center;    
+}
+
+#formulario-usuario .img{
+    width: 50vw;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#form-usuario{
+    width: 50vw;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+
+#form-usuario label{font-size: larger;}
+
+#form-usuario input, #form-usuario select{
+    font-size: larger;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #00ffff;
+}
+
+#form-usuario .button{background-color: #c0c0c0;}
+
+#form-usuario #submit-button:hover{background-color: #00ffff;}
+
+#form-usuario #reset-button:hover{background-color: #ff4500;}

@@ -2,7 +2,7 @@
     width: 100vw;
     height: 85vh;
     background-color: azure;
-    background-image: url(https://static.wikia.nocookie.net/tron/images/1/16/Streets_of_Tron_City.png);
+    background-image: url(https://www.beyondgames.biz/wp-content/uploads/2021/11/tron-legacy-art.jpg);
     background-position: top;
     background-size: cover;
     display: flex;
@@ -12,13 +12,14 @@
     align-self: center;    
 }
 
-#formulario-usuario .img{
+#formulario-usuario .banner{
     width: 50vw;
     height: 85vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    background-color: rgb(12, 12, 12, 0.3);
 }
 
 #form-usuario{
@@ -28,7 +29,7 @@
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(12, 12, 12, 0.8);
     color: white;
 }
 

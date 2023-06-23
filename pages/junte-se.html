@@ -19,7 +19,7 @@
   </nav>
   <main id="junte-se">
     <section id="formulario-usuario">
-      <div class="img"><h1><span>Junte-se a nós nessa jornada.<br>Seja um usuário!</span></h1></div>
+      <div class="banner"><h1 style="font-size: 60px;"><span>Junte-se a nós nessa jornada.<br>Seja um usuário!</span></h1></div>
       <form id="form-usuario" onsubmit="return processarFormulario()" method="POST">
         <label for="usuario">Dados do usuário:</label>
         <div>
@@ -109,6 +109,11 @@
       var nome = document.getElementById('nome-form').value;
       var email = document.getElementById('email-form').value;
       var senha = document.getElementById('senha-form').value;
+      var jogos = document.getElementById('jogos-form').value;
+      var personagem = document.getElementById('personagem-form').value;
+      var lado = document.getElementById('lado-form').value;
+      var arquitetura = document.getElementById('arquitetura-form').value;
+      const interesses = [jogos, personagem, lado, arquitetura]
       // Em seguida, você pode fazer o que for necessário com os valores do formulário, como enviar uma requisição AJAX
       // Após o processamento, você pode exibir uma mensagem de sucesso
       alert('Formulário enviado com sucesso!');
